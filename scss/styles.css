@@ -1,0 +1,330 @@
+body {
+  background-color: #fff;
+}
+
+.my-name {
+  display: none;
+  align-items: center;
+  padding-left: 1rem;
+  color: #0494ef;
+  flex-grow: 1;
+}
+
+.signature {
+  width: 100px;
+}
+
+.nav {
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.nav-link {
+  color: #0494ef;
+}
+.nav-link:hover {
+  color: #4e99ff;
+}
+
+h2 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #0494ef;
+  font-family: cursive;
+}
+
+.greeting {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-align: justify;
+  color: #4e99ff;
+}
+
+.animation,
+.animation-bottom {
+  width: 100%;
+}
+
+.form-switch,
+.form-check {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-check-label {
+  padding-left: 1rem;
+  color: #4e99ff;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fa-github {
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.fa-instagram {
+  padding-right: 3rem;
+  cursor: pointer;
+}
+
+.fa-linkedin-in {
+  cursor: pointer;
+}
+
+.fab:hover {
+  color: #4e99ff;
+}
+
+h3 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #0494ef;
+}
+
+.my-skill {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fab {
+  color: #0494ef;
+}
+
+.card-text {
+  font-variant: all-petite-caps;
+}
+
+.slide-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carouselImg {
+  width: 35%;
+  margin: 10px;
+  box-shadow: 3px 2px 5px #4e99ff;
+  align-self: center;
+  width: 80%;
+}
+
+.card {
+  transition: all 0.1s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 18px #555555;
+  transform: scale(1.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  background-color: #0494ef;
+  color: #fff;
+  cursor: pointer;
+}
+
+form {
+  max-width: 50%;
+  margin: 10px auto;
+  padding: 0;
+  background: #fff;
+  color: #4e99ff;
+  border-radius: 25px;
+  box-shadow: 0 0 3px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  padding: 15px;
+  width: 90%;
+}
+
+.sendBtn {
+  width: 50%;
+}
+
+textarea {
+  background: #a7cbfd;
+  border: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  height: 20vw;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  color: #fff;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  margin-bottom: 10px;
+  border-color: #4e99ff;
+  border-radius: 6px;
+  border: none;
+  background: #a7cbfd;
+  color: #f5fffa;
+  padding-left: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.swal-overlay {
+  background-color: rgba(4, 148, 239, 0.35);
+}
+
+.swal-modal {
+  border-radius: 20px;
+}
+
+.fa-footer {
+  padding-right: 1rem;
+}
+
+.btn {
+  color: #0494ef;
+  margin-bottom: 1rem;
+}
+
+.col-7 {
+  display: flex;
+  align-items: center;
+}
+
+.col-5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.copyright {
+  color: #0494ef;
+  font-size: 0.6em;
+}
+
+@media (min-width: 576px) {
+  .col-5 {
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+
+  .animation-bottom {
+    align-self: center;
+  }
+}
+@media (min-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .my-name {
+    display: flex;
+  }
+
+  .form-animation {
+    display: flex;
+  }
+
+  .contact-form {
+    flex: 3 1 auto;
+  }
+
+  .animation-bottom {
+    flex: 2;
+    align-self: center;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .col-5 {
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 991px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .my-name {
+    display: flex;
+  }
+
+  .greeting-animation {
+    display: flex;
+  }
+
+  .greeting {
+    flex: 2;
+  }
+
+  .animation {
+    flex: 1;
+  }
+
+  .col-5 {
+    justify-content: flex-end;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

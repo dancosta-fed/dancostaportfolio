@@ -1,0 +1,390 @@
+// base colors
+$background-color: #fff;
+$nav-color: #0494ef;
+$text-color: #4e99ff;
+$text-area: #a7cbfd;
+$contact-bg: #f5fffa;
+$alert-bg: rgba(4, 148, 239, 0.35);
+
+//---------------------------------------------------------------------------------------//
+//---------------------------------------------------------------------------------------//
+
+body {
+    background-color: $background-color;
+}
+
+// === NAV === //
+
+.my-name {
+    display: none;
+    align-items: center;
+    padding-left: 1rem;
+    color: $nav-color;
+    flex-grow: 1;
+}
+
+.signature {
+    width: 100px;
+}
+
+
+.nav {
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.nav-link {
+    color: $nav-color;
+
+    &:hover{
+        color: $text-color;
+    }
+}
+
+// === ABOUT == // 
+h2 {
+    padding-top: 1rem;
+    text-align: center;
+    color: $nav-color;
+    font-family: cursive;
+}
+
+ .greeting {
+        display: flex;
+        padding-left: 1rem;
+    }
+
+.text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: justify;
+    color: $text-color;
+}
+
+// === ANIMATION 1 === // 
+
+.animation,
+.animation-bottom {
+    width: 100%;
+}
+
+.form-switch, 
+.form-check {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.form-check-label {
+    padding-left: 1rem;
+    color: $text-color;
+}
+
+// === SOCIAL MEDIA === // 
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fa-github {
+    padding-right: 3rem;
+    cursor: pointer;
+}
+
+.fa-instagram{
+    padding-right: 3rem;
+    cursor: pointer;
+}
+
+.fa-linkedin-in {
+    cursor: pointer;
+    
+}
+
+.fab {
+    &:hover{
+        color: $text-color;
+    }
+}
+
+// === SKILLS === // 
+
+h3 {
+    padding-top: 1rem;
+    text-align: center;
+    color: $nav-color;
+}
+
+.my-skill {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fab {
+    color: $nav-color;
+}
+
+.card-text {
+    font-variant: all-petite-caps;
+}
+
+// === PORTFOLIO === //
+
+.slide-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carouselImg {
+    width: 35%;
+    margin: 10px;
+    box-shadow: 3px 2px 5px $text-color;
+    align-self: center;
+    width: 80%;
+}
+
+.card{
+    transition: all .1s ease-in-out;
+}
+.card:hover{
+    box-shadow: 5px 10px 18px rgb(85, 85, 85);
+    transform: scale(1.05);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn:hover{
+    background-color: $nav-color;
+    color: $background-color;
+    cursor: pointer;
+    
+}
+
+// === CONTACT FORM === //
+
+form {
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 0;
+    background: $background-color;
+    color: $text-color;
+    border-radius: 25px;
+
+    box-shadow: 0 0 3px 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding: 15px;
+    width: 90%;
+}
+
+.sendBtn {
+    width: 50%;
+}
+
+textarea {
+    background: $text-area;
+    border: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    height: 20vw;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    color: $background-color;
+    width: 100%;
+
+}
+
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+    border-color: $text-color;
+    border-radius: 6px;
+    border: none;
+    background: $text-area;
+    color: $contact-bg;
+    padding-left: 10px;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+// === ALERT === //
+
+.swal-overlay {
+    background-color: $alert-bg;
+    
+  }
+
+  .swal-modal {
+
+    border-radius: 20px;
+}
+
+// === FOOTER === //
+
+.fa-footer {
+    padding-right: 1rem;
+}
+
+.btn {
+    color: $nav-color;
+    margin-bottom: 1rem;
+}
+
+.col-7 {
+    display: flex;
+    align-items: center;
+}
+
+.col-5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.copyright {
+    color: $nav-color;
+    font-size: .6em;
+}
+
+//---------------------------------------------------------------------------------------//
+                          // ----- // MEDIA QUERIES // -----// 
+//---------------------------------------------------------------------------------------//
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    
+        .col-5 {
+            justify-content: flex-end;
+        }
+    
+        .copyright {
+            display: flex;
+            justify-content: center;
+        }
+
+       .animation-bottom {
+            align-self: center;
+       }
+
+}
+
+// Medium devices (tablets, 767px and up)
+@media (min-width: 767px) { 
+     // NAV
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }    
+
+    .my-name {
+        display: flex;
+    }
+
+    // CONTACT
+
+    .form-animation {
+        display: flex;
+    }
+
+    .contact-form {
+        flex: 3 1 auto;
+    }
+
+    .animation-bottom {
+        flex: 2;
+        align-self: center;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    // FOOTER
+
+    .col-5 {
+        justify-content: flex-end;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+ }
+
+// Large devices (desktops, 991px and up)
+@media (min-width: 991px) {  
+
+ // NAV
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }    
+
+    .my-name {
+        display: flex;
+    }
+  // ABOUT
+  
+  .greeting-animation {
+      display: flex;
+  }
+
+  .greeting {
+      flex: 2;
+  }
+
+  .animation {
+      flex: 1;
+  }
+
+ // FOOTER
+
+    .col-5 {
+        justify-content: flex-end;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+
+}
